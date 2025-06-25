@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="561.0" style="-fx-background-color: #c8e6e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankisaplikacia1.Offers">
+   <children>
+      <Button fx:id="continueInternetButton" layoutX="45.0" layoutY="198.0" mnemonicParsing="false" onAction="#continue1" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="Continue" textFill="#0a4c53" />
+      <Button fx:id="continuePhoneBalanceButton" layoutX="225.0" layoutY="198.0" mnemonicParsing="false" onAction="#continue2" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="Continue" textFill="#0a4c53" />
+      <Button fx:id="continueBalanceButton" layoutX="399.0" layoutY="198.0" mnemonicParsing="false" onAction="#continue3" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="Continue" textFill="#0a4c53" />
+      <Label fx:id="internetLabel" layoutX="33.0" layoutY="159.0" text="Internet Package" textFill="#0a4c53">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="unfreezeLabel" layoutX="60.0" layoutY="360.0" text="Your card is locked! Press this button to reactivate it -&gt;" textFill="#0a4c53">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="phoneBalanceLabel" layoutX="220.0" layoutY="159.0" text="Phone Balance" textFill="#0a4c53">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="balanceLabel" layoutX="336.0" layoutY="159.0" text="Exchange Piko Points into Money" textFill="#0a4c53">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="BackButton" layoutX="21.0" layoutY="451.0" mnemonicParsing="false" onAction="#OffersToMainMenu" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #9ed5d1;" text="&lt;- Back" textFill="#0a4c53" />
+      <Label fx:id="internetOfferLabel" layoutX="13.0" layoutY="258.0" text="1000 Piko points = 1 week" textFill="#0a4c53">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="phoneBalanceOfferLabel" layoutX="193.0" layoutY="258.0" text="2000 Piko points = 1 week" textFill="#0a4c53">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Label fx:id="balanceOfferLabel" layoutX="374.0" layoutY="258.0" text="3000 Piko points = 5 GEL" textFill="#0a4c53">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <Button fx:id="unfreezeButton" layoutX="423.0" layoutY="352.0" mnemonicParsing="false" onAction="#OffersToUnfreeze" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="Reactivate" textFill="#0a4c53" />
+      <Label fx:id="mainLabel" layoutX="175.0" layoutY="52.0" text="EXCLUSIVE OFFERS" textFill="#0a4c53">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

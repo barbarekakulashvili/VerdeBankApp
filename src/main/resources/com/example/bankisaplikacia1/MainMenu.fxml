@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="561.0" style="-fx-background-color: #c8e6e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankisaplikacia1.MainMenu">
+   <children>
+      <Button fx:id="CheckBalanceButton" layoutX="128.0" layoutY="102.0" mnemonicParsing="false" onAction="#balanceScene" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #9ed5d1;" text="Check Balance" textFill="#0a4c53" />
+      <Button fx:id="TransactionsButton" layoutX="123.0" layoutY="163.0" mnemonicParsing="false" onAction="#MainMenuToTransactions" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #9ed5d1;" text="Make a Transfer" textFill="#0a4c53" />
+      <Button fx:id="CurrencyConverterButton" layoutX="110.0" layoutY="222.0" mnemonicParsing="false" onAction="#currencyConverterScene" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #9ed5d1;" text="Currency Converter" textFill="#0a4c53" />
+      <Button fx:id="historyButton" layoutX="112.0" layoutY="287.0" mnemonicParsing="false" onAction="#MainMenuToHistory" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: #9ed5d1;" text="Transaction History" textFill="#0a4c53" />
+      <Button fx:id="PiggyBankButton" layoutX="124.0" layoutY="347.0" mnemonicParsing="false" onAction="#MainMenuToPiggyBank" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: #9ed5d1;" text="My Piko Card" textFill="#0a4c53" />
+      <Button fx:id="CardFreezeButton" layoutX="357.0" layoutY="287.0" mnemonicParsing="false" onAction="#MainMenuToCardFreeze" prefHeight="34.0" style="-fx-background-color: #9ed5d1;" text="Lock Card" textFill="#0a4c53" />
+      <Button fx:id="OffersButton" layoutX="341.0" layoutY="102.0" mnemonicParsing="false" onAction="#MainMenuToOffers" prefHeight="34.0" style="-fx-background-color: #9ed5d1;" text="Exclusive Offers" textFill="#0a4c53" />
+      <Button fx:id="BlockCardButton" layoutX="401.0" layoutY="454.0" mnemonicParsing="false" onAction="#MainMenuToBlockCard" prefHeight="34.0" style="-fx-background-color: #9ed5d1;" text="Delete Account" textFill="#0a4c53" />
+      <Button fx:id="LogOutButton" layoutX="14.0" layoutY="455.0" mnemonicParsing="false" onAction="#MainMenuToLogIn" prefHeight="34.0" prefWidth="92.0" style="-fx-background-color: #9ed5d1;" text="&lt;- Log Out" textFill="#0a4c53" />
+      <Button fx:id="CardUnfreezeButton" layoutX="348.0" layoutY="347.0" mnemonicParsing="false" onAction="#MainMenuToCardUnfreeze" prefHeight="34.0" style="-fx-background-color: #9ed5d1;" text="Reactivate Card" textFill="#0a4c53" />
+      <Button fx:id="loanButton" layoutX="341.0" layoutY="156.0" mnemonicParsing="false" onAction="#MainMenuToLoan" prefHeight="34.0" style="-fx-background-color: #9ed5d1;" text="Request a Loan" textFill="#0a4c53" />
+      <Button fx:id="deductedAmountChange" layoutX="318.0" layoutY="222.0" mnemonicParsing="false" onAction="#MainMenuToDeductedAmountChange" prefHeight="34.0" style="-fx-background-color: #9ed5d1;" text="Reset Deducted Amount" textFill="#0a4c53" />
+      <Label fx:id="mainLabel" layoutX="179.0" layoutY="14.0" text="MAIN MENU" textFill="#0a4c53">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="helloLabel" layoutX="427.0" layoutY="26.0" textFill="#0a4c53">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

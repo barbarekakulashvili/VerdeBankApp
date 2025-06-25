@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="514.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankisaplikacia1.HistoryAdmins">
+   <children>
+      <AnchorPane prefHeight="514.0" prefWidth="561.0">
+         <children>
+            <AnchorPane prefHeight="514.0" prefWidth="561.0" style="-fx-background-color: #c8e6e2;">
+               <children>
+                  <Label fx:id="mainLabel" layoutX="45.0" layoutY="39.0" text="VIEW CUSTOMER TRANSACTION HISTORY" textFill="#0a4c53">
+                     <font>
+                        <Font name="Tahoma Bold" size="25.0" />
+                     </font></Label>
+                  <TextField fx:id="usernameTextField" layoutX="134.0" layoutY="111.0" prefHeight="40.0" prefWidth="262.0" promptText="Customer's username" />
+                  <Button fx:id="backButton" layoutX="17.0" layoutY="469.0" mnemonicParsing="false" onAction="#HistoryAdminsToMainMenuAdmins" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #9ed5d1;" text="&lt;- Back" textFill="#0a4c53">
+                     <font>
+                        <Font size="12.8" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewButton" layoutX="222.0" layoutY="418.0" mnemonicParsing="false" onAction="#historyAdminsMethod" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="View" textFill="#0a4c53">
+                     <font>
+                        <Font size="12.8" />
+                     </font>
+                  </Button>
+                  <Label fx:id="errorLabel" layoutX="134.0" layoutY="362.0" textFill="#990303" />
+                  <TextField fx:id="adminsUsernameField" layoutX="134.0" layoutY="164.0" prefHeight="40.0" prefWidth="262.0" promptText="Your username" />
+                  <PasswordField fx:id="passwordTextField" layoutX="134.0" layoutY="217.0" prefHeight="40.0" prefWidth="262.0" promptText="Your password" />
+                  <PasswordField fx:id="pinCodeTextField" layoutX="134.0" layoutY="288.0" prefHeight="40.0" prefWidth="262.0" promptText="PIN" />
+                  <CheckBox fx:id="showPassword" layoutX="134.0" layoutY="257.0" mnemonicParsing="false" onAction="#passwordVisibility" text="Show password" textFill="#0a4c53" />
+                  <CheckBox fx:id="showPinCode" layoutX="134.0" layoutY="332.0" mnemonicParsing="false" onAction="#pinCodeVisibility" text="Show PIN" textFill="#0a4c53" />
+                  <TextField fx:id="visiblePassword" layoutX="134.0" layoutY="217.0" prefHeight="40.0" prefWidth="262.0" promptText="Your password" />
+                  <TextField fx:id="visiblePinCode" layoutX="134.0" layoutY="288.0" prefHeight="40.0" prefWidth="262.0" promptText="PIN" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

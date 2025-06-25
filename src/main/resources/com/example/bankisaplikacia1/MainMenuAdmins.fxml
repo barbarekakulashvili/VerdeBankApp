@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="561.0" style="-fx-background-color: #c8e6e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankisaplikacia1.MainMenuAdmins">
+   <children>
+      <Label fx:id="mainLabel" layoutX="111.0" layoutY="26.0" text="WELCOME ADMINS" textFill="#0a4c53">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font></Label>
+      <Button fx:id="customersHistoryButton" layoutX="150.0" layoutY="179.0" mnemonicParsing="false" onAction="#MainMenuAdminsToHistory" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #9ed5d1;" text="Review customer transaction history" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Button fx:id="customersStatusButton" layoutX="150.0" layoutY="124.0" mnemonicParsing="false" onAction="#MainMenuAdminsToStatusCustomers" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #9ed5d1;" text="Access customer card status information" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Button fx:id="freezeCustomersButton" layoutX="150.0" layoutY="237.0" mnemonicParsing="false" onAction="#MainMenuAdminsToCardFreeze" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #9ed5d1;" text="Suspend customer card access" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Button fx:id="unfreezeCustomersButton" layoutX="150.0" layoutY="292.0" mnemonicParsing="false" onAction="#MainMenuAdminsToCardUnfreeze" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #9ed5d1;" text="Reinstate customer card access" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Button fx:id="removeCustomersButton" layoutX="150.0" layoutY="349.0" mnemonicParsing="false" onAction="#MainMenuAdminsToRemoveCustomer" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #9ed5d1;" text="Permanently close customer account" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Button fx:id="backButton" layoutX="24.0" layoutY="436.0" mnemonicParsing="false" onAction="#MainMenuAdminsToLogIn" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #9ed5d1;" text="&lt;- Back" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+   </children>
+</AnchorPane>

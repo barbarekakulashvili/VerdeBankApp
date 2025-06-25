@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="561.0" style="-fx-background-color: #c8e6e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankisaplikacia1.BlockCard">
+   <children>
+      <Label fx:id="mainLabel" layoutX="67.0" layoutY="41.0" text="DELETE YOUR ACCOUNT" textFill="#0a4c53">
+         <font>
+            <Font name="Tahoma Bold" size="35.0" />
+         </font></Label>
+      <TextField fx:id="usernameTextField" layoutX="150.0" layoutY="120.0" prefHeight="40.0" prefWidth="262.0" promptText="Username" />
+      <Label fx:id="questionLabel" layoutX="50.0" layoutY="382.0" prefHeight="27.0" prefWidth="274.0" text="Are you sure you want to deactivate your card?" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Label>
+      <CheckBox fx:id="sureCheckBox" layoutX="333.0" layoutY="387.0" mnemonicParsing="false" onAction="#sureCheckBoxMethod" text="Yes, I am sure." textFill="#0a4c53" />
+      <Button fx:id="backButton" layoutX="28.0" layoutY="461.0" mnemonicParsing="false" onAction="#BlockCardToMainMenu" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #9ed5d1;" text="&lt;- Back" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Button fx:id="deactivateButton" layoutX="238.0" layoutY="427.0" mnemonicParsing="false" onAction="#deactivateMethod" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="Deactivate" textFill="#0a4c53">
+         <font>
+            <Font size="12.8" />
+         </font></Button>
+      <Label fx:id="errorLabel" layoutX="150.0" layoutY="333.0" prefHeight="50.0" prefWidth="298.0" textFill="#990303" />
+      <PasswordField fx:id="passwordTextField" layoutX="150.0" layoutY="193.0" prefHeight="40.0" prefWidth="262.0" promptText="Password" />
+      <PasswordField fx:id="pinCodeTextField" layoutX="150.0" layoutY="271.0" prefHeight="40.0" prefWidth="262.0" promptText="PIN" />
+      <CheckBox fx:id="showPassword" layoutX="150.0" layoutY="233.0" mnemonicParsing="false" onAction="#passwordVisibility" text="Show password" textFill="#0a4c53" />
+      <CheckBox fx:id="showPinCode" layoutX="150.0" layoutY="311.0" mnemonicParsing="false" onAction="#pinCodeVisibility" text="Show PIN" textFill="#0a4c53" />
+      <TextField fx:id="visiblePassword" layoutX="150.0" layoutY="193.0" prefHeight="40.0" prefWidth="262.0" promptText="Password" />
+      <TextField fx:id="visiblePinCode" layoutX="150.0" layoutY="271.0" prefHeight="40.0" prefWidth="262.0" promptText="PIN" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>

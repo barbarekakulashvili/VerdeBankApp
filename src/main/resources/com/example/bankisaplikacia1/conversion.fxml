@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="514.0" prefWidth="561.0" style="-fx-background-color: #c8e6e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bankisaplikacia1.Conversion">
+   <children>
+      <ChoiceBox fx:id="fromWhichBox" layoutX="205.0" layoutY="122.0" prefWidth="150.0" style="-fx-background-color: #9ed5d1;" />
+      <Label fx:id="fromWhichLabel" layoutX="181.0" layoutY="85.0" text="Select the currency to convert from" textFill="#0a4c53">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="toWhichLabel" layoutX="189.0" layoutY="184.0" text="Select the currency to convert to" textFill="#0a4c53">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ChoiceBox fx:id="toWhichBox" layoutX="205.0" layoutY="217.0" prefHeight="27.0" prefWidth="150.0" style="-fx-background-color: #9ed5d1;" />
+      <TextField fx:id="amountTextField" layoutX="158.0" layoutY="290.0" prefHeight="40.0" prefWidth="262.0" promptText="Input the amount" />
+      <Label fx:id="answerLabel" layoutX="180.0" layoutY="358.0" textFill="#990303">
+         <font>
+            <Font size="12.0" />
+         </font></Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="453.0" mnemonicParsing="false" onAction="#conversionToMainMenu" prefHeight="34.0" prefWidth="78.0" style="-fx-background-color: #9ed5d1;" text="&lt;- Back" textFill="#0a4c53" />
+      <Button fx:id="convertButton" layoutX="246.0" layoutY="402.0" mnemonicParsing="false" onAction="#ConversionMethod" prefHeight="34.0" prefWidth="87.0" style="-fx-background-color: #9ed5d1;" text="Convert" textFill="#0a4c53" />
+      <Label fx:id="questionLabel" layoutX="113.0" layoutY="24.0" text="ENTER CONVERSION DETAILS" textFill="#0a4c53">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
