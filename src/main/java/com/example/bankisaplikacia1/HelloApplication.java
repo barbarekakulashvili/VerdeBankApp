@@ -12,7 +12,7 @@ import java.sql.*;
 public class HelloApplication extends Application {
     public static String url = "jdbc:mysql://localhost:3306/bank";
     public static String username = "root";
-    public static String password = "anastasia";
+    public static String password = "password";
 
 
 
@@ -31,9 +31,11 @@ public class HelloApplication extends Application {
     }
     public static void main(String[] args) throws SQLException {
 
-        Connection connection = DriverManager.getConnection(HelloApplication.url, HelloApplication.username,
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/sys", HelloApplication.username,
                 HelloApplication.password);
         Statement statement = connection.createStatement();
+        statement.execute("create database if not exists bank");
+
         statement.execute("use bank");
         //statement.execute("drop table if exists customers");
         statement.executeUpdate("create table if not exists customers" +
@@ -45,9 +47,10 @@ public class HelloApplication extends Application {
                 "pinCode int default 0 not null, " +
                 "status varchar(10) default 'active', " +
                 "loan decimal(10, 2) default 0 not null, " +
-                "deducted_amount decimal(10,2) default 0 not null );");
+                "deducted_amount decimal(10,2) default 0 not null," +
+                "points int default 0 );");
 
-       //statement.executeUpdate("alter table customers add column points int default 0");
+      //  statement.executeUpdate("alter table customers add column points int default 0");
 
 
         PreparedStatement preparedStatement1 = connection.prepareStatement("insert into customers values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)," +
