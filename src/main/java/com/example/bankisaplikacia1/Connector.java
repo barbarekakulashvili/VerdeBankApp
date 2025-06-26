@@ -62,6 +62,12 @@ public class Connector {
                     "deducted_amount decimal(10,2) default 0 not null," +
                     "points int default 0 );");
 
+            statement.executeUpdate("create table if not exists admins" +
+                    "( username varchar(20) not null, " +
+                    "password varchar(20) not null, " +
+                    "code int default 0 not null );");
+
+
             if (!statement.executeQuery("select * from customers").next()) {
                 PreparedStatement preparedStatement1 = connection.prepareStatement("insert into customers values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)," +
                         " (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
@@ -90,10 +96,6 @@ public class Connector {
                 preparedStatement1.executeUpdate();
 
                 //statement.execute("drop table if exists admins");
-                statement.executeUpdate("create table if not exists admins" +
-                        "( username varchar(20) not null, " +
-                        "password varchar(20) not null, " +
-                        "code int default 0 not null );");
 
                 PreparedStatement preparedStatement = connection.prepareStatement("insert into admins values(?, ?, ?)," +
                         " (?, ?, ?), (?, ?, ?)");
